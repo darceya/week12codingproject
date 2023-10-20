@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Community Pea Patch</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    
+   
+  </head>
+
+  <body class="bg-secondary">
+      <!--  -->
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Community Garden Club</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Membership Form</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+   
+   
+    <div id="main-container" class="container pt-2 pb-5 bg-light">
+      <div>
+        <img
+          src="images/gardening.png"
+          class="img-fluid"
+          alt="Gardening"
+          width="2000"
+        />
+    </div>
+      
+
+   
+    <h1 class="text-center mb-5">Welcome to the Community Garden Club</h1>
+
+    <div class="container text-center fs-4">
+        <p>
+          Welcome to the Community Garden Hub. 
+          If you are not a member and would like to join, please complete the form below. 
+        </p>  
+    </div>
+
+    <div>
+    <form>
+    <!-- Personal Information Section and Form for Input -->
+        <fieldset>
+            <h2 class="text-center mb-3">Personal Information</h2>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                      <label for="firstName" class="form-label"></label>
+                      <input id="firstName" type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="lastName" class="form-label"></label>
+                        <input id="lastName" type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" required>
+                      </div>
+                    <div class="col-md-12">
+                      <label for="favoritePlant" class="form-label"></label>
+                      <input id="favoritePlant" type="favoritePlant" class="form-control" id="favoritePlant" name="favoritePlant" placeholder="Favorite Plant" required>
+                    </div>
+                </div>
+                
+
+                <div class="mb-3">
+                    
+                    <select class="form-select" id="membershipType" name="membershipType" required>
+                      <option value="" disabled selected>Select Membership Type</option>
+                      <option value="individual">Individual</option>
+                      <option value="family">Family</option>
+                      <option value="senior">Senior</option>
+                    </select>
+                </div>
+                <div>
+                    <button id="add" class="btn btn-success form-control">Create</button>
+                </div>
+        </fieldset>
+    </div>
+
+    
+        
+    <!-- Table with Members  -->
+    
+        <h2 class="text-center mt-5 mb-5">Current Members</h2>
+        <div class="alert alert-success text-center fs-6">Current Members and Member Type</div> 
+   
+            <table id='members' class="table table-success table-hover">
+                <tr>
+                    <th>Member Number</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Favorite Plant</th>
+                    <th>Type</th>
+                    <th>Remove</th>
+                  </tr>  
+            </table>
+
+
+            <div>
+                <form>
+                    <h4 class="text-center mb-3">Update Member Information</h4>
+                        <div class="row mb-3">
+                            <div class="col-md-2">
+                                <label for="updateId" class="form-label"></label>
+                                <input id="updateId" type="text" class="form-control" id="updateId" name="updateId" placeholder="Garden Member ID">
+                            </div>
+                            <div class="col-md-5">
+                                <label for="updatefirstName" class="form-label"></label>
+                                <input id="updatefirstName" type="text" class="form-control" id="updatefirstName" name="firstName" placeholder=" Update First Name">
+                            </div>
+                            <div class="col-md-5">
+                                <label for="updatelastName" class="form-label"></label>
+                                <input id="updatelastName" type="text" class="form-control" id="updatelastName" name="lastName" placeholder="Update Last Name">
+                            </div>
+                        <div class="col-md-12">
+                            <label for="updatefavoritePlant" class="form-label"></label>
+                            <input id="updatefavoritePlant" type="updatefavoritePlant" class="form-control" id="favoritePlant" name="favoritePlant" placeholder="Update Favorite Plant" required>
+                        </div>
+                        </div>
+                        <div class="mb-3">
+                            <select class="form-select" id="updatemembershipType" name="membershipType">
+                                <option value="" disabled selected>Update Membership Type</option>
+                                <option value="individual">Individual</option>
+                                <option value="family">Family</option>
+                                <option value="senior">Senior</option>
+                            </select>
+                        </div>
+                <div>
+                    <button id="updateGardenMember" class="btn btn-success form-control">Update</button>
+                </div>
+                </form>
+            </div>
+                
+    
+
+
+    
+
+    
+
+     
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./index.js"></script>
+
+
+   
+  </body>
+
+</html>

@@ -1,0 +1,32 @@
+{
+  "gardenMembers": [
+    {
+      "firstName": "Tom",
+      "lastName": "Greenthumb",
+      "favoritePlant": "Weed",
+      "membershipType": "Individual",
+      "id": 1
+    },
+    {
+      "firstName": "Benson",
+      "lastName": "Sprouts",
+      "favoritePlant": "Sprouts",
+      "membershipType": "Senior",
+      "id": 2
+    },
+    {
+      "firstName": "Troy",
+      "lastName": "Plantsman",
+      "favoritePlant": "Grass",
+      "membershipType": "Individual",
+      "id": 3
+    },
+    {
+      "firstName": "Jimbo",
+      "lastName": "Dandelion",
+      "favoritePlant": "Dandelion",
+      "membershipType": "Family",
+      "id": 4
+    }
+  ]
+}
